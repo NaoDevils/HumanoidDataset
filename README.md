@@ -25,7 +25,8 @@ The dataset should be in [MCAP](https://mcap.dev/) format and using X as backend
 
 #### Optional Information
 - Image data (compressed)
-  - Camera intrinsic 
+  - Camera intrinsic
+- Audiodata (wav)
 - Robot state: current task of the robot (combination of e.g. grasping, fallen, walking, climbing stairs, ...)
 - FSR sensor data
 - Walk data:
