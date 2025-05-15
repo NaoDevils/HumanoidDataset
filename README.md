@@ -14,7 +14,7 @@ Optional Information:
 - Robot description by DH parameter
 
 ### Dataset
-The dataset should be in [MCAP](https://mcap.dev/) format and using X as backend format.
+The dataset should be in [MCAP](https://mcap.dev/) format and using Protobuf as backend format.
 #### Mandatory Information
 - Timestamp (UNIX) in milliseconds (unsigned int)
 - Gyroscope (x,y,z)
