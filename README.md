@@ -24,7 +24,8 @@ A recording is a `.mcap` file and consists out of metadata (task, robot platform
 
 #### Metadata
 
-The metadata should be in JSON format and contain the following information:
+The metadata should be in JSON format.
+It should be provided as metadata of the recording within the `.mcap` file and contain the following information:
 
 ##### Mandatory Metadata
 
@@ -38,11 +39,32 @@ The metadata should be in JSON format and contain the following information:
 - Location
 - Team Color (RoboCup context)
 - Robot condition (wear and tear)
-- Algorithmus used (motion, controller, ...)
+- Algorithm used (motion, controller, ...)
 - Robot description by DH parameter
+
+### Structure of repository
+
+To allow for easy access to specific types of recordings based on metadata, we propose a global metadata file,
+which collects all the metadata of the recordings in a single file with path references to the recording `.mcap` files.
+
+Combined with our tooling, this allows querying the dataset for specific recordings.
+E.g. _"select all recordings of robots of type X, which are not simulated and have the primary task of soccer"_.
+
+For better overview withing the repository the folder structure should be as follows:
+- `recordings/` (folder containing all recordings)
+  - `importer/`
+    - `robot_type` (script to import the dataset)
+        - `experiment|event`
+            - `robot_id_date_time.mcap` (recording)
+            - ...
+  - ...
+
+Example recording path: `recordings/bit-bots/wolfgang-op/robocup-2024/ID_1_2024-01-01T12:00:00.mcap`
+
 
 ### Dataset
 The dataset should be in [MCAP](https://mcap.dev/) format and using X as backend format.
+
 #### Mandatory Information
 - Timestamp (UNIX) in milliseconds (unsigned int)
 - Gyroscope (x,y,z)
