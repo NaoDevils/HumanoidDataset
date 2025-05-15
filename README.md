@@ -1,12 +1,40 @@
 # HumanoidDataset
 
-### Dataset Metadata (Mandatory)
+## Goal
+
+The goal of this project is to crowd-source a diverse dataset of humanoid robots.
+For this purpose, we propose a standardized and extensible recording container format.
+The dataset will contain many such recordings of humanoid robots accomplishing different tasks in various environments including their sensor measurements, states and actions.
+
+### How to contribute
+
+We are happy to include your recordings in our dataset.
+Please make sure, you have the minimal set of information and are allowed to publish your data under the _**###TODO license###**_.
+
+Contact us ... _**###TODO###**_
+
+## Dataset Specification
+
+The HumanoidDataset can be understood as a simple collection of [Recordings](#recording).
+Additionally, we plan to provide a set of [Tools](#tools) for converting, visualizing and analyzing the data.
+
+A recording is a `.mcap` file and consists out of metadata (task, robot platform, environment, ...) and a sequence of datapoints/messages (on-robot sensor measurements, inferred state, and actions) recorded on a single robot.
+
+### Recording
+
+#### Metadata
+
 The metadata should be in JSON format and contain the following information:
+
+##### Mandatory Metadata
+
 - Robot type (manufacturer, model, version)
 - Jointdata description (e.g. number of joints, map of joint label (rShoulderRoll) to description)
 - Primary task of the robot (e.g. soccer, delivery packages, etc.)
 - Simulated (yes or no)
-Optional Information:
+
+##### Optional Metadata
+
 - Location
 - Team Color (RoboCup context)
 - Robot condition (wear and tear)
