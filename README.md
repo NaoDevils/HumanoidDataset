@@ -1,4 +1,4 @@
-# HumanoidDataset
+# Humanoid Robot Dataset
 
 ## Goal
 
