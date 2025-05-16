@@ -63,7 +63,7 @@ Example recording path: `recordings/bit-bots/wolfgang-op/robocup-2024/ID_1_2024-
 
 
 ### Dataset
-The dataset should be in [MCAP](https://mcap.dev/) format and using X as backend format.
+The dataset should be in [MCAP](https://mcap.dev/) format and using Protobuf as backend format.
 
 #### Mandatory Information
 - Timestamp (UNIX) in milliseconds (unsigned int)
