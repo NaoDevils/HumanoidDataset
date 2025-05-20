@@ -1,5 +1,7 @@
 # Humanoid Robot Dataset
 
+**This guideline is still a work in progress and is subject to change. We encourage everyone to contribute to its development by sharing feedback and suggestions.**
+
 ## Goal
 
 The goal of this project is to crowd-source a diverse dataset of humanoid robots.
@@ -9,9 +11,9 @@ The dataset will contain many such recordings of humanoid robots accomplishing d
 ### How to contribute
 
 We are happy to include your recordings in our dataset.
-Please make sure, you have the minimal set of information and are allowed to publish your data under the _**###TODO license###**_.
+Please make sure, you have the minimal set of information and are allowed to publish your data under the apache-2.0 licence.
 
-Contact us ... _**###TODO###**_
+Contact us by writing to oliver dot urbann at tu-dortmund.de.
 
 ## Dataset Specification
 
